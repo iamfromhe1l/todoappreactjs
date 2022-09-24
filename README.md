@@ -1,7 +1,7 @@
 # Getting Started with ToDoApp
 
-##npm i
+## npm i
 
-##npm run start
+## npm run start
 
-##To start, you need a server with authorization
+## To start, you need a server with authorization
