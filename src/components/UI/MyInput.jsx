@@ -7,11 +7,12 @@ const MyInput = ({ addTodo, placeholder }) => {
 		setTitle('')
 	}
 	return (
-		<div className='flex items-center justify-between mb-4 rounded-2xl bg-zinc-900 border border-zinc-800 px-5 py-2 w-full'>
+		<div className='relative flex items-center justify-between mb-4 rounded-2xl h-14 bg-zinc-900 bg-gradient-to-br from-pink-800 to-purple-700 px-0.5 w-full'>
 			<input
-				className='bg-transparent w-full text-center h-8 border-none outline-none'
+				className='bg-zinc-800 w-full text-center border-none outline-none transition-all ease-in duration-75 relative rounded-2xl focus:bg-zinc-900'
 				type='text'
 				value={title}
+				style={{ height: '94%' }}
 				onChange={e => setTitle(e.target.value)}
 				placeholder={placeholder}
 				onKeyPress={e => e.key === 'Enter' && addTodoWithClearTitle(title)}
